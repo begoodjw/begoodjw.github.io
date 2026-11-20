@@ -14,6 +14,7 @@ const platform = document.querySelector('#platform');
 const status = document.querySelector('#status');
 const list = document.querySelector('#apps');
 const storeNames = { ios: 'App Store', android: 'Google Play' };
+const storeIcons = { ios: './icons/apple.svg', android: './icons/google-play.svg' };
 const names = new Intl.DisplayNames([language], { type: 'region' });
 
 document.documentElement.lang = language;
@@ -61,7 +62,11 @@ function render(apps) {
     if (description) details.append(make('p', '', description));
     const links = make('div', 'stores');
     for (const [key, store] of stores) {
-      const link = make(demo ? 'span' : 'a', 'store', storeNames[key]);
+      const link = make(demo ? 'span' : 'a', 'store');
+      const storeIcon = make('img', 'store-icon');
+      storeIcon.src = storeIcons[key];
+      storeIcon.alt = '';
+      link.append(storeIcon, document.createTextNode(storeNames[key]));
       if (!demo) {
         link.href = store.url;
         link.setAttribute('aria-label', name + ' · ' + storeNames[key]);
