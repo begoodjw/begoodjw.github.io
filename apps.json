@@ -20,7 +20,8 @@
           "KR"
         ]
       }
-    }
+    },
+    "icon": "./icons/tv-schedule.png"
   },
   {
     "id": "tv-schedule-jp",
@@ -43,7 +44,8 @@
           "JP"
         ]
       }
-    }
+    },
+    "icon": "./icons/tv-schedule.png"
   },
   {
     "id": "workout-log",
