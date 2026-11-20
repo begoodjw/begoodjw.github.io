@@ -4,9 +4,9 @@ const query = new URLSearchParams(location.search);
 const preferredLanguage = (query.get('lang') || navigator.language).split('-')[0].toLowerCase();
 const language = ['ko', 'ja'].includes(preferredLanguage) ? preferredLanguage : 'en';
 const copy = {
-  ko: { title: '일상을 조금 더 간편하게', subtitle: '필요한 순간에 간편하게 쓸 수 있는 앱을 만듭니다.', heading: '개발자의 다른 앱', country: '국가', platform: '플랫폼', all: '전체', worldwide: '전 세계 공통', loading: '앱 목록을 불러오는 중입니다.', empty: '선택한 국가와 플랫폼에서 표시할 앱이 없습니다.', error: '앱 목록을 불러오지 못했습니다. 잠시 후 다시 시도해 주세요.', count: n => `앱 ${n}개`, demo: '예시 미리보기' },
-  ja: { title: '日常を、もう少し便利に', subtitle: '必要なときに、手軽に使えるアプリを作っています。', heading: '開発者のほかのアプリ', country: '国', platform: 'プラットフォーム', all: 'すべて', worldwide: '世界共通のアプリ', loading: 'アプリを読み込んでいます。', empty: '選択した国とプラットフォームで表示できるアプリはありません。', error: 'アプリ一覧を読み込めませんでした。しばらくしてからお試しください。', count: n => n + '件のアプリ', demo: 'サンプルプレビュー' },
-  en: { title: 'Make life a little easier', subtitle: 'We make apps that are easy to use whenever you need them.', heading: 'More apps by Begood', country: 'Country', platform: 'Platform', all: 'All platforms', worldwide: 'Worldwide apps', loading: 'Loading apps…', empty: 'No apps to show for this country and platform.', error: 'Could not load the app list. Please try again later.', count: n => `${n} ${n === 1 ? 'app' : 'apps'}`, demo: 'Sample preview' }
+  ko: { title: '조금 더 간편하게', subtitle: '필요한 순간에 간편하게 쓸 수 있는 앱을 만듭니다.', heading: '개발자의 다른 앱', country: '국가', platform: '플랫폼', all: '전체', worldwide: '전 세계 공통', loading: '앱 목록을 불러오는 중입니다.', empty: '선택한 국가와 플랫폼에서 표시할 앱이 없습니다.', error: '앱 목록을 불러오지 못했습니다. 잠시 후 다시 시도해 주세요.', count: n => `앱 ${n}개`, demo: '예시 미리보기' },
+  ja: { title: 'もう少し手軽に', subtitle: '必要なときに、手軽に使えるアプリを作っています。', heading: '開発者のほかのアプリ', country: '国', platform: 'プラットフォーム', all: 'すべて', worldwide: '世界共通のアプリ', loading: 'アプリを読み込んでいます。', empty: '選択した国とプラットフォームで表示できるアプリはありません。', error: 'アプリ一覧を読み込めませんでした。しばらくしてからお試しください。', count: n => n + '件のアプリ', demo: 'サンプルプレビュー' },
+  en: { title: 'A little easier', subtitle: 'We make apps that are easy to use whenever you need them.', heading: 'More apps by Begood', country: 'Country', platform: 'Platform', all: 'All platforms', worldwide: 'Worldwide apps', loading: 'Loading apps…', empty: 'No apps to show for this country and platform.', error: 'Could not load the app list. Please try again later.', count: n => `${n} ${n === 1 ? 'app' : 'apps'}`, demo: 'Sample preview' }
 }[language];
 const demo = query.get('demo') === '1';
 const country = document.querySelector('#country');
