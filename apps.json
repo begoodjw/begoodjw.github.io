@@ -1,0 +1,121 @@
+[
+  {
+    "id": "tv-schedule-kr",
+    "name": {
+      "default": "초간편 TV편성표"
+    },
+    "description": {
+      "default": "TV 시청자를 위한 정말 편리한 TV편성표"
+    },
+    "stores": {
+      "ios": {
+        "url": "https://apps.apple.com/kr/app/id6472880433",
+        "countries": [
+          "KR"
+        ]
+      },
+      "android": {
+        "url": "https://play.google.com/store/apps/details?id=com.everydaytalk.smart_tv_scheduler.smart_tv_scheduler",
+        "countries": [
+          "KR"
+        ]
+      }
+    }
+  },
+  {
+    "id": "tv-schedule-jp",
+    "name": {
+      "default": "超かんたんTV番組表"
+    },
+    "description": {
+      "default": "地上波・BS・CSの番組表を見やすく整理。お気に入り登録や番組通知、予告動画の視聴でテレビをもっと便利に楽しめます。"
+    },
+    "stores": {
+      "ios": {
+        "url": "https://apps.apple.com/jp/app/id6772715849",
+        "countries": [
+          "JP"
+        ]
+      },
+      "android": {
+        "url": "https://play.google.com/store/apps/details?id=com.everydaytalk.smart_tv_scheduler.smart_tv_scheduler_jp",
+        "countries": [
+          "JP"
+        ]
+      }
+    }
+  },
+  {
+    "id": "workout-log",
+    "name": {
+      "default": "헬스 기록부"
+    },
+    "description": {
+      "default": "그날의 운동을 기록하고, 다시 꺼내보는 나만의 헬스 기록부."
+    },
+    "stores": {
+      "ios": {
+        "url": "https://apps.apple.com/kr/app/id6796747534",
+        "countries": [
+          "KR"
+        ]
+      },
+      "android": {
+        "url": "https://play.google.com/store/apps/details?id=com.everydaytalk.my_helth_log.my_helth_log",
+        "countries": [
+          "KR"
+        ]
+      }
+    }
+  },
+  {
+    "id": "easy-bookmarky",
+    "name": {
+      "default": "Easy Bookmarky"
+    },
+    "description": {
+      "default": "Save Links Easily"
+    },
+    "stores": {
+      "ios": {
+        "url": "https://apps.apple.com/app/id6502902530",
+        "countries": "*"
+      },
+      "android": {
+        "url": "https://play.google.com/store/apps/details?id=com.everydaytalk.link.hatchery.link_hatchery",
+        "countries": "*"
+      }
+    },
+    "namesByCountry": {
+      "KR": "초간편 링크저장소",
+      "JP": "超かんたんリンク保存"
+    },
+    "descriptionsByCountry": {
+      "KR": "링크를 간편하게 저장하고 관리하세요.",
+      "JP": "リンクを簡単に保存・管理しましょう"
+    }
+  },
+  {
+    "id": "easy-scoreboard",
+    "name": {
+      "default": "Easy Scoreboard"
+    },
+    "description": {
+      "default": "Add a scoreboard to your sports videos."
+    },
+    "stores": {
+      "ios": {
+        "url": "https://apps.apple.com/app/easy-scoreboard-video-editor/id6737460216",
+        "countries": "*"
+      },
+      "android": {
+        "url": "https://play.google.com/store/apps/details?id=com.erverydaytalk.insert_scoreboard",
+        "countries": "*"
+      }
+    },
+    "descriptionsByCountry": {
+      "KR": "스포츠 영상에 간편하게 점수판을 삽입하세요.",
+      "JP": "スポーツビデオにスコアボードを簡単に適用および編集できます。"
+    }
+  }
+]

@@ -1,0 +1,31 @@
+:root{color-scheme:light;--ink:#172822;--muted:#4b6259;--line:#d8e3db;--paper:#f4f7f2;--accent:#d9ff93}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.55 -apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif}
+.wrap{width:min(100% - 3rem,68rem);margin-inline:auto}
+.masthead{background:#101a17;color:#f2f8ee;border-bottom:4px solid #a7c791}
+.brand{display:flex;align-items:center;gap:.6rem;font-size:1.05rem;font-weight:750;padding-block:1.35rem}
+.mark{display:grid;grid-template-columns:repeat(2,7px);gap:3px}
+.mark i{width:7px;height:7px;background:var(--accent);border-radius:2px}
+.mark i:last-child{opacity:.48}
+.intro{padding-block:clamp(2rem,6vw,4.75rem)}
+h1,h2,h3,p{margin:0}
+h1{color:var(--accent);font-size:clamp(2.7rem,7vw,5.75rem);line-height:1.05;letter-spacing:-.065em}
+.intro p{margin-top:1rem;color:#c9d7ce}
+main{padding-block:2rem 4rem}
+.toolbar,.filters{display:flex;flex-wrap:wrap;align-items:center;gap:.65rem 1rem}
+.toolbar{justify-content:space-between;padding-bottom:1rem;border-bottom:1px solid var(--line)}
+h2{font-size:1.45rem;letter-spacing:-.04em}
+label{display:flex;align-items:center;gap:.5rem;font-size:.875rem;color:var(--muted)}
+select,.store{min-height:44px;border-radius:10px;font:inherit}
+select{appearance:none;border:1px solid #b3c5b9;background:white;color:var(--ink);padding:.4rem 2rem .4rem .7rem;background-image:linear-gradient(45deg,transparent 50%,#365247 50%),linear-gradient(135deg,#365247 50%,transparent 50%);background-position:calc(100% - 14px) 50%,calc(100% - 9px) 50%;background-size:5px 5px;background-repeat:no-repeat;max-width:12rem}
+#status{margin-block:1rem;color:var(--muted)}
+#apps{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,26rem),1fr));gap:1rem;list-style:none;padding:0;margin:0}
+.card{display:grid;grid-template-columns:auto minmax(0,1fr);gap:.75rem 1rem;background:white;border:1px solid var(--line);border-radius:1rem;padding:1.2rem;align-content:start}
+.icon{display:grid;place-items:center;width:3.6rem;height:3.6rem;border-radius:1rem;background:#e2eedf;color:#28553f;font-weight:800;font-size:1.5rem;object-fit:cover}
+.card h3{font-size:1.15rem;overflow-wrap:anywhere}
+.card p{color:var(--muted);margin-top:.2rem;overflow-wrap:anywhere}
+.stores{grid-column:2;display:flex;flex-wrap:wrap;gap:.5rem}
+.store{display:inline-flex;align-items:center;padding:.4rem .85rem;background:#e6f3de;color:#183a2b;text-decoration:none;font-size:.875rem;font-weight:700}
+.store:hover{background:#d5ebc9}
+:focus-visible{outline:2px solid #397856;outline-offset:3px}
+@media(max-width:480px){.wrap{width:calc(100% - 2rem)}.toolbar{align-items:flex-start;flex-direction:column}}
