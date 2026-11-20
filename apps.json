@@ -68,7 +68,8 @@
           "KR"
         ]
       }
-    }
+    },
+    "icon": "./icons/workout-log.png"
   },
   {
     "id": "easy-bookmarky",
@@ -95,7 +96,8 @@
     "descriptionsByCountry": {
       "KR": "링크를 간편하게 저장하고 관리하세요.",
       "JP": "リンクを簡単に保存・管理しましょう"
-    }
+    },
+    "icon": "./icons/easy-bookmarky.png"
   },
   {
     "id": "easy-scoreboard",
@@ -118,6 +120,7 @@
     "descriptionsByCountry": {
       "KR": "스포츠 영상에 간편하게 점수판을 삽입하세요.",
       "JP": "スポーツビデオにスコアボードを簡単に適用および編集できます。"
-    }
+    },
+    "icon": "./icons/easy-scoreboard.png"
   }
 ]
